@@ -1,0 +1,44 @@
+{
+    "background":"background.js",
+    "manifest_version": 2,
+    "content_scripts":[
+        {
+            "js":[ "jquery-1.8.0.min.js", "highslide-full.min.js", "script.js" ],
+            "matches":[ "http://forum.sources.ru/*" ],
+            "run_at":"document_start",
+            "css": ["highslide.css"]
+        }
+    ],
+    "description":"Добавление highslide.js к форуму",
+    "name":"sources_ru_highslide",
+    "permissions":[ "http://*/*", "unlimitedStorage"],
+    "web_accessible_resources":[
+        "graphics/close.png",
+        "graphics/closeX.png",
+        "graphics/controlbar-black-border.gif",
+        "graphics/controlbar-text-buttons.png",
+        "graphics/controlbar-white.gif",
+        "graphics/controlbar-white-small.gif",
+        "graphics/controlbar2.gif",
+        "graphics/controlbar3.gif",
+        "graphics/controlbar4.gif",
+        "graphics/controlbar4-hover.gif",
+        "graphics/fullexpand.gif",
+        "graphics/geckodimmer.png",
+        "graphics/icon.gif",
+        "graphics/loader.gif",
+        "graphics/loader.white.gif",
+        "graphics/resize.gif",
+        "graphics/scrollarrows.png",
+        "graphics/zoomin.cur",
+        "graphics/zoomout.cur",
+        "graphics/outlines/beveled.png",
+        "graphics/outlines/drop-shadow.png",
+        "graphics/outlines/glossy-dark.png",
+        "graphics/outlines/outer-glow.png",
+        "graphics/outlines/Outlines.psd",
+        "graphics/outlines/rounded-black.png",
+        "graphics/outlines/rounded-white.png"
+    ],
+    "version":"0.9.4"
+}
